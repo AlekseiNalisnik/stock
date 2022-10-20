@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Склад</title>
+</head>
+<body>
+    <h1>
+        Склад
+    </h1>
+
+    <div>
+        <a href="products.html">Товары</a>
+        <a href="clients.html">Клиенты</a>
+    </div>
+
+    <h2>Сделки</h2>
+
+    <div>
+        Для добавления - заполняются табличные поля и НЕ указывается ID <br />
+        Для редактирования - заполняются табличные поля, ID указывается
+    </div> <br />
+
+    <i>Добавить/редактировать сделку</i>
+    <table border="1">
+        <tr>
+            <td>Дата</td>
+            <td>
+                <input placeholder="Дата" id="date_deal" />
+            </td>
+        </tr>
+
+        <tr>
+            <td>Тип</td>
+            <td>
+                <input placeholder="Тип" id="type_deal" />
+            </td>
+        </tr>
+
+        <tr>
+            <td>Статус</td>
+            <td>
+                <input placeholder="Статус" id="status_deal" />
+            </td>
+        </tr>
+
+        <tr>
+            <td>Покупатель</td>
+            <td>
+                <input placeholder="Покупатель" id="buyer_deal" />
+            </td>
+        </tr>
+
+        <tr>
+            <td>Товар</td>
+            <td>
+                <input placeholder="Товар" id="product_deal" />
+            </td>
+        </tr>
+    </table> <br />
+
+    <div>
+        <button id="add_deal">
+            Добавить
+        </button>
+    
+        <button id="edit_deal">
+            Редактировать
+        </button>
+    
+        <input placeholder="ID сделки" id="edit_id_deal" />
+    </div> <br />
+
+    <i>Удалить сделку</i>
+    <div>
+        <i>Идентификатор</i>
+
+        <input placeholder="ID сделки" id="delete_id_deal" />
+
+        <button id="delete_deal">
+            Удалить
+        </button>
+    </div>
+
+    <h2>Сделки</h2>
+    <table border="1" id="table_deal">
+        <tr>
+            <td>ID</td>
+            <td>Дата</td>
+            <td>Тип</td>
+            <td>Статус</td>
+            <td>Покупатель</td>
+            <td>Товар</td>
+        </tr>
+    </table>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="./deals.js"></script>
+</body>
+</html>

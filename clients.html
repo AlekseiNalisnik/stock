@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Склад</title>
+</head>
+<body>
+    <h1>
+        Склад
+    </h1>
+
+    <div>
+        <a href="products.html">Товары</a>
+        <a href="deals.html">Сделки</a>
+    </div>
+
+    <h2>Клиенты</h2>
+
+    <div>
+        Для добавления - заполняются табличные поля и НЕ указывается ID <br />
+        Для редактирования - заполняются табличные поля, ID указывается
+    </div> <br />
+
+    <i>Добавить/редактировать клиента</i>
+    <table border="1">
+        <tr>
+            <td>Имя</td>
+            <td>
+                <input placeholder="Имя" id="name_client" />
+            </td>
+        </tr>
+
+        <tr>
+            <td>Фамилия</td>
+            <td>
+                <input placeholder="Фамилия" id="surname_client" />
+            </td>
+        </tr>
+
+        <tr>
+            <td>Отчество</td>
+            <td>
+                <input placeholder="Отчество" id="lastname_client" />
+            </td>
+        </tr>
+
+        <tr>
+            <td>Дата рождения</td>
+            <td>
+                <input placeholder="Дата рождения" id="birthday_client" />
+            </td>
+        </tr>
+
+        <tr>
+            <td>Паспорт</td>
+            <td>
+                <input placeholder="Паспорт" id="passport_client" />
+            </td>
+        </tr>
+    </table> <br />
+
+    <div>
+        <button id="add_client">
+            Добавить
+        </button>
+    
+        <button id="edit_client">
+            Редактировать
+        </button>
+    
+        <input placeholder="ID клиента" id="edit_id_client" />
+    </div> <br />
+
+    <i>Удалить клиента</i>
+    <div>
+        <i>Идентификатор</i>
+
+        <input placeholder="ID клиента" id="delete_id_client" />
+
+        <button id="delete_client">
+            Удалить
+        </button>
+    </div>
+
+    <h2>Клиенты</h2>
+    <table border="1" id="table_client">
+        <tr>
+            <td>ID</td>
+            <td>Имя</td>
+            <td>Фамилия</td>
+            <td>Отчество</td>
+            <td>Дата рождения</td>
+            <td>Паспорт</td>
+        </tr>
+    </table>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="./clients.js"></script>
+</body>
+</html>

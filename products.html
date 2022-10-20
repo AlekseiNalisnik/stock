@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Склад</title>
+</head>
+<body>
+    <h1>
+        Склад
+    </h1>
+
+    <div>
+        <a href="deals.html">Сделки</a>
+        <a href="clients.html">Клиенты</a>
+    </div>
+
+    <h2>Продукты</h2>
+
+    <div>
+        Для добавления - заполняются табличные поля и НЕ указывается ID <br />
+        Для редактирования - заполняются табличные поля, ID указывается
+    </div> <br />
+
+    <i>Добавить/редактировать продукт</i>
+    <table border="1">
+        <tr>
+            <td>Название</td>
+            <td>
+                <input placeholder="Название" id="name_product" />
+            </td>
+        </tr>
+
+        <tr>
+            <td>Цена</td>
+            <td>
+                <input placeholder="Цена" id="cost_product" />
+            </td>
+        </tr>
+
+        <tr>
+            <td>Количество</td>
+            <td>
+                <input placeholder="Количество" id="count_product" />
+            </td>
+        </tr>
+
+        <tr>
+            <td>Дата производства</td>
+            <td>
+                <input placeholder="Дата производства" id="date_product" />
+            </td>
+        </tr>
+
+        <tr>
+            <td>Вес</td>
+            <td>
+                <input placeholder="Вес" id="weight_product" />
+            </td>
+        </tr>
+    </table> <br />
+
+    <div>
+        <button id="add_product">
+            Добавить
+        </button>
+    
+        <button id="edit_product">
+            Редактировать
+        </button>
+    
+        <input placeholder="ID продукта" id="edit_id_product" />
+    </div> <br />
+
+    <i>Удалить продукт</i>
+    <div>
+        <i>Идентификатор</i>
+
+        <input placeholder="ID продукта" id="delete_id_product" />
+
+        <button id="delete_product">
+            Удалить
+        </button>
+    </div>
+
+    <h2>Продукты</h2>
+    <table border="1" id="table_product">
+        <tr>
+            <td>ID</td>
+            <td>Название</td>
+            <td>Цена</td>
+            <td>Количество</td>
+            <td>Дата производства</td>
+            <td>Вес</td>
+        </tr>
+    </table>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="./products.js"></script>
+</body>
+</html>
